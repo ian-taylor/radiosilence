@@ -34,18 +34,34 @@ crossorigin="anonymous"></script>
 
 <body>
 
+
+
 <!-- Radio Silence Banner -->
 
 
-<img src="./images/radio-silence-banner.jpg" style="width:100%; ">
+<div class="bwrapper">
+    <div class="banner">
+        <div class="social bar">
+            <a href="#" target="_blank"><img src="./icons/youtube.webp"></a>
+            <a href="#" target="_blank"><img src="./icons/itunes.webp"></a>
+            <a href="#" target="_blank"><img src="./icons/twitter.webp"></a>
+            <a href="#" target="_blank"><img src="./icons/spotify.webp"></a>
+            <a href="#" target="_blank"><img src="./icons/facebook.webp"></a>
+        </div>
+        <img src="./images/radio-silence-banner.jpg" style="width: 100%; z-index: -1;">
 
+    </div>
+</div>
+
+
+<div class="ui divider"> </div>
 
 <!-- About Radio Silence Section -->
 
-<div class="ui stackable grid">
-    <div class="eight wide column">
+<div class="ui stackable grid" style="margin: 0 10% 0 10%;">
+    <div class="eight wide column" style="background-image: url('images/whitesmoke.png');">
 
-        <div style="margin: 20px 25% 20px 25%" >
+        <div style="margin: 20px 25% 20px 25%;" >
             <h2 class="ui large header">About Radio Silence</h2>
 
             <p class="ui large">Although Radio Silence covers songs recorded over several years, most were either recorded or prior recordings were pretty much redone in 2020. While in isolation, I got fed up with social media and decided to remove all apps from my devices and spend weekends more productively and artistically. one song led to another and I ended up recording 14 over a a few months, 12 of which were selected for the album.       </p>
@@ -61,93 +77,103 @@ crossorigin="anonymous"></script>
 
 </div>
 
+
+
 <!-- Back Cover Section-->
 
 <div class="ui divider"> </div>
 
-<div style="margin: 0 10% 0 10%">
+<div style="margin: 0 10% 0 10%; ">
 
-    <h2 class="ui icon header aligned center">
-        <i class="play icon"></i>
-        <div class="content">
-            The Songs
-            <div class="sub header">Twelve songs, journeying through time</div>
+    <div class="ui basic segment" style="background-image: url('images/whitesmoke.png'); margin: 0;;">
+        <div class="ui grid">
+            <div class="six wide column">
+                <i class="huge play icon"></i>
+            </div>
+            <div class="four wide column">
+                <div style="position:relative; font-size: 2em; margin-top: 10px; text-align: center">The Songs</div>
+            </div>
+            <div class="six wide column"></div>
         </div>
-    </h2>
+    </div>
 
-    <img src="./images/back-cover.png" style="width:100%; ">
+    <div class="ui fluid image">
+        <img src="./images/back-cover.png">
+    </div>
+
 </div>
 
 
 <!-- Song Lyrics Section -->
 
-<div class="ui divider"> </div>
+<div style="margin: 0 10% 0 10%">
+    <div class="gallery items-12" style="text-align: center; height: 800px; margin: 0; border: 0;">
+        <div id="SmokeRingSmile" class="control-operator"></div>
+        <div id="VideoGames" class="control-operator"></div>
+        <div id="BadyDay" class="control-operator"></div>
+        <div id="SuspiciousMinds" class="control-operator"></div>
+        <div id="Anorak" class="control-operator"></div>
 
+        <figure class="item">
+            <h1>Smoke Ring Smile</h1>
+            <h2>Song and performed by Ian Taylor</h2>
 
-<div class="gallery items-12" style='text-align: center; height: 800px'>
-    <div id="SmokeRingSmile" class="control-operator"></div>
-    <div id="VideoGames" class="control-operator"></div>
-    <div id="BadyDay" class="control-operator"></div>
-    <div id="SuspiciousMinds" class="control-operator"></div>
-    <div id="Anorak" class="control-operator"></div>
+            <div w3-include-html="lyrics/SmokeRingSmile.html"></div>
 
-    <figure class="item">
-        <h1>Smoke Ring Smile</h1>
-        <h2>Song and performed by Ian Taylor</h2>
+        </figure>
 
-        <div w3-include-html="lyrics/SmokeRingSmile.html"></div>
+        <figure class="item">
+            <h1>Kings Of The Video Games</h1>
+        </figure>
 
-    </figure>
+        <figure class="item">
+            <h1>Bad Day</h1>
+        </figure>
 
-    <figure class="item">
-        <h1>Kings Of The Video Games</h1>
-    </figure>
+        <figure class="item">
+            <h1>Suspicious Minds</h1>
+            <h2>Song by Elvis, performed by Ian Taylor</h2>
 
-    <figure class="item">
-        <h1>Bad Day</h1>
-    </figure>
+            <div w3-include-html="lyrics/SuspiciousMinds.html"></div>
 
-    <figure class="item">
-        <h1>Suspicious Minds</h1>
-        <h2>Song by Elvis, performed by Ian Taylor</h2>
+        </figure>
 
-        <div w3-include-html="lyrics/SuspiciousMinds.html"></div>
+        <figure class="item">
+            <h1>Anorak</h1>
+        </figure>
 
-    </figure>
-
-    <figure class="item">
-        <h1>Anorak</h1>
-    </figure>
-
-    <div class="controls">
-        <a href="#SmokeRingSmile" class="control-button">•</a>
-        <a href="#VideoGames" class="control-button">•</a>
-        <a href="#BadyDay" class="control-button">•</a>
-        <a href="#SuspiciousMinds" class="control-button">•</a>
-        <a href="#Anorak" class="control-button">•</a>
+        <div class="controls">
+            <a href="#SmokeRingSmile" class="control-button">•</a>
+            <a href="#VideoGames" class="control-button">•</a>
+            <a href="#BadyDay" class="control-button">•</a>
+            <a href="#SuspiciousMinds" class="control-button">•</a>
+            <a href="#Anorak" class="control-button">•</a>
+        </div>
     </div>
 </div>
 
 <!-- Thanks ! Section -->
 
-<div class="ui divider"> </div>
 
-<div class="ui inverted grey segment" style="margin: 20px 25% 20px 25%; font-size: 20px" >
-    <h2 class="ui large header">Thanks !</h2>
+<div style=" margin: 0 10% 0 10%; padding: 20px 0 20px 0 ; background-color: #e3e3e3">
 
-    <p class="ui large">
-        Thanks for the epic contributions from my son, George, with lyrics on Kings of the Video Games and for this site, twitter and all of that other social media stuff I don't do any more :)  Thanks to friends (Thamir, Tammy, Robert, Chris, Jarek and Sandra, to name a few) and sister Amanda for the positive feedback.  And thanks finally to my adorable wife, for the patience, positivity and asking to play this time and time again - you're a real sweetheart.
-    </p>
+    <div class="ui segment" style="margin: 5px 25% 5px 25%; padding: 20px; font-size: 20px; border-color: #c04c4e; background-color: #696a6d;color: whitesmoke; border-width: 10px;" >
+        <h2 class="ui large header" style="color: whitesmoke">Thanks !</h2>
+
+        <p class="ui large">
+            Thanks for the epic contributions from my son, George, with lyrics on Kings of the Video Games and for this site, twitter and all of that other social media stuff I don't do any more :)  Thanks to friends (Thamir, Tammy, Robert, Chris, Jarek and Sandra, to name a few) and sister Amanda for the positive feedback.  And thanks finally to my adorable wife, for the patience, positivity and asking to play this time and time again - you're a real sweetheart.
+        </p>
+    </div>
 </div>
 
 
 <!-- Footer -->
 <footer class="ui inverted secondary segment" style="text-align: center; font-size: 60px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-youtube w3-hover-opacity"></i>
-    <i class="fa fa-spotify w3-hover-opacity"></i>
-    <i class="fab fa-itunes w3-hover-opacity"></i>
+    <i class="facebook w3-hover-opacity"></i>
+    <i class="twitter w3-hover-opacity" ></i>
+    <i class="youtube w3-hover-opacity"></i>
+    <i class="spotify w3-hover-opacity"></i>
+    <i class="itunes w3-hover-opacity"></i>
 
     <p style="font-size: 16px; padding: 10px;">Copyright Ian Taylor, 2020</p>
 </footer>

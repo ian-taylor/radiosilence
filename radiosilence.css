@@ -7,3 +7,44 @@ body #fonts {
     font-weight: 400;
     font-size: 20px;
 }
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    margin: 0 20% 0 20%;
+}
+
+.social.bar {
+    position: fixed;
+    white-space: nowrap;
+    width: 360px;
+    height: 64px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    padding: 20px;
+}
+
+.social.bar a {
+    cursor: pointer;
+}
+
+
+.banner {
+    height: 70%;
+    position: fixed;
+}
+
+.bwrapper {
+    height: 70%;
+}
+
+
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
