@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="jquery.royalslider.min.js"></script>
+
+    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/royalslider.css" rel="stylesheet">
+    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/skins/default/rs-default.css" rel="stylesheet">
+
+    <style>
+        .contentSlider {
+            width: 100%;
+        }
+        .contentSlider,
+        .contentSlider .rsOverflow,
+        .contentSlider .rsSlide,
+        .contentSlider .rsVideoFrameHolder,
+        .contentSlider .rsThumbs {
+            background: #eee;
+            color: #000;
+        }
+
+        .contentSlider .rsSlide,
+        .contentSlider .rsOverflow {
+            background: #eee;
+        }
+        .contentSlider h3 {
+            font-size: 24px;
+            line-height: 31px;
+            margin: 12px 0 8px;
+            font-weight: bold;
+        }
+        .contentSlider img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content-slider-bg {
+            width: 86%;
+            padding: 24px 7%;
+            background: #eee;
+        }
+    </style>
+
+</head>
+<body>
+
+<img src="images/radio-silence-banner.jpg" style="width: 100%">
+
+
+<div id="content-slider-1" class="royalSlider contentSlider rsDefault" >
+    <div>
+        <h3>Smoke Ring Smile</h3>
+
+
+        Ian Taylor
+
+        ​
+
+
+        It feels like your mind’s on fire
+
+        It feels like your soul’s alive
+
+        It feels like the world’s on your side
+
+        and you want and you wish
+
+
+
+        Your friends tell you to slow down
+
+        Telling you she’ll let you down
+
+        And they’ll advise you she’ll break your soul
+
+        But you say no, you say no
+
+
+
+        Chorus:
+
+        She hides behind that smoke ring smile
+
+        She glides with that fashion and style
+
+        Her vibe makes you smile like a child
+
+        But it’s hard to live in the wild
+
+
+
+        Then the day comes when you’re as one
+
+        and you’ve proved everybody wrong
+
+        And you gloat at their mistrust
+
+        But you know, but you know
+
+
+
+        The future’s uncertain with all
+
+        Whether you stand tall, or you stand small
+
+        life has its many turns
+
+        and we know, yes we know
+
+
+
+        [Repeat Chorus]
+
+
+
+        The only way forward is by thought
+
+        the strength that you’ll make it work
+
+        And despite our inner concerns
+
+        That’s where we’ll go, where we’ll go
+
+
+
+        [Repeat Chorus]
+        <span class="rsTmb">Smoke Ring Smile</span>
+    </div>
+    <div>
+        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/home.jpg" data-rsw="707" data-rsh="397">
+        <h3>Slide with Image and Text</h3>
+        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago. But then, this is dummy copy. It is not meant to be read. Period.</p>
+        <span class="rsTmb">Image</span>
+    </div>
+    <div>
+        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/boat.jpg" data-rsvideo="http://www.youtube.com/watch?v=HFbHRWwyihE" data-rsw="640" data-rsh="425">
+        <h3>Slide with Video and Text</h3>
+        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. But then, this is dummy copy. It is not meant to be read. Period.</p>
+        <span class="rsTmb">Video</span>
+    </div>
+
+</div>
+
+<script>
+    jQuery(document).ready(function($) {
+        // Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
+        // it's recommended to disable them when using autoHeight module
+        $('#content-slider-1').royalSlider({
+            autoHeight: true,
+            arrowsNav: false,
+            fadeinLoadedSlide: false,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'tabs',
+            imageScaleMode: 'none',
+            imageAlignCenter:false,
+            loop: false,
+            loopRewind: true,
+            numImagesToPreload: 6,
+            keyboardNavEnabled: true,
+            usePreloader: false
+        });
+    });
+</script>
+
+
+</body>
+</html>
