@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="jquery.royalslider.min.js"></script>
+
+    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/royalslider.css" rel="stylesheet">
+    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/skins/default/rs-default.css" rel="stylesheet">
+
+    <link href="radiosilence.css" rel="stylesheet">
+
+    <style>
+        .contentSlider {
+            width: 100%;
+        }
+        .contentSlider,
+        .contentSlider .rsOverflow,
+        .contentSlider .rsSlide,
+        .contentSlider .rsVideoFrameHolder,
+        .contentSlider .rsThumbs {
+            background: #eee;
+            color: #000;
+        }
+
+        .contentSlider .rsSlide,
+        .contentSlider .rsOverflow {
+            background: #eee;
+        }
+        .contentSlider h3 {
+            font-size: 24px;
+            line-height: 31px;
+            margin: 12px 0 8px;
+            font-weight: bold;
+        }
+        .contentSlider img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content-slider-bg {
+            width: 86%;
+            padding: 24px 7%;
+            background: #eee;
+        }
+    </style>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<img src="images/radio-silence-banner.jpg" style="width: 100%">
+
+
+<div id="content-slider-1" class="royalSlider contentSlider rsDefault" >
+    <div>
+
+        <div w3-include-html="pages/SmokeRingSmile.html"></div>
+
+        <span class="rsTmb">Smoke Ring Smile</span>
+    </div>
+    <div>
+        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/home.jpg" data-rsw="707" data-rsh="397">
+        <h3>Slide with Image and Text</h3>
+        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago. But then, this is dummy copy. It is not meant to be read. Period.</p>
+        <span class="rsTmb">Image</span>
+    </div>
+    <div>
+        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/boat.jpg" data-rsvideo="http://www.youtube.com/watch?v=HFbHRWwyihE" data-rsw="640" data-rsh="425">
+        <h3>Slide with Video and Text</h3>
+        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. But then, this is dummy copy. It is not meant to be read. Period.</p>
+        <span class="rsTmb">Video</span>
+    </div>
+
+</div>
+
+<script>
+    jQuery(document).ready(function($) {
+        // Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
+        // it's recommended to disable them when using autoHeight module
+        $('#content-slider-1').royalSlider({
+            autoHeight: true,
+            arrowsNav: false,
+            fadeinLoadedSlide: false,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'tabs',
+            imageScaleMode: 'none',
+            imageAlignCenter:false,
+            loop: false,
+            loopRewind: true,
+            numImagesToPreload: 6,
+            keyboardNavEnabled: true,
+            usePreloader: false
+        });
+    });
+</script>
+
+<script>
+    includeHTML();
+</script>
+
+
+</body>
+</html>

@@ -1,171 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <script src="jquery-1.8.3.min.js"></script>
-    <script src="jquery.royalslider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<link rel="stylesheet" href="./radiosilence.css">
+<link rel="stylesheet" href="gallery/gallery.css">
+<link rel="stylesheet" href="gallery/gallery.theme.css">
 
-    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/royalslider.css" rel="stylesheet">
-    <link href="https://lowercolumbia.edu/_resources/plugins/royal-slider/templates/assets/royalslider/skins/default/rs-default.css" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="js/jquery-1.8.3.min.js"></script>
 
-    <style>
-        .contentSlider {
-            width: 100%;
-        }
-        .contentSlider,
-        .contentSlider .rsOverflow,
-        .contentSlider .rsSlide,
-        .contentSlider .rsVideoFrameHolder,
-        .contentSlider .rsThumbs {
-            background: #eee;
-            color: #000;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .contentSlider .rsSlide,
-        .contentSlider .rsOverflow {
-            background: #eee;
-        }
-        .contentSlider h3 {
-            font-size: 24px;
-            line-height: 31px;
-            margin: 12px 0 8px;
-            font-weight: bold;
-        }
-        .contentSlider img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .content-slider-bg {
-            width: 86%;
-            padding: 24px 7%;
-            background: #eee;
-        }
-    </style>
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="semantic/semantic.min.js"></script>
 
-</head>
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size:20px;
+        text-align: justify;
+    }
+    .mySlides {display: none}
+</style>
+
+<!-- Ignore above - boilereplate !-->
+
 <body>
 
-<img src="images/radio-silence-banner.jpg" style="width: 100%">
+<!-- Radio Silence Banner -->
 
 
-<div id="content-slider-1" class="royalSlider contentSlider rsDefault" >
-    <div>
-        <h3>Smoke Ring Smile</h3>
+<img src="./images/radio-silence-banner.jpg" style="width:100%; ">
 
 
-        Ian Taylor
+<!-- About Radio Silence Section -->
 
-        ​
+<div class="ui stackable grid">
+    <div class="eight wide column">
 
+        <div style="margin: 20px 25% 20px 25%" >
+            <h2 class="ui large header">About Radio Silence</h2>
 
-        It feels like your mind’s on fire
-
-        It feels like your soul’s alive
-
-        It feels like the world’s on your side
-
-        and you want and you wish
-
-
-
-        Your friends tell you to slow down
-
-        Telling you she’ll let you down
-
-        And they’ll advise you she’ll break your soul
-
-        But you say no, you say no
-
-
-
-        Chorus:
-
-        She hides behind that smoke ring smile
-
-        She glides with that fashion and style
-
-        Her vibe makes you smile like a child
-
-        But it’s hard to live in the wild
-
-
-
-        Then the day comes when you’re as one
-
-        and you’ve proved everybody wrong
-
-        And you gloat at their mistrust
-
-        But you know, but you know
-
-
-
-        The future’s uncertain with all
-
-        Whether you stand tall, or you stand small
-
-        life has its many turns
-
-        and we know, yes we know
-
-
-
-        [Repeat Chorus]
-
-
-
-        The only way forward is by thought
-
-        the strength that you’ll make it work
-
-        And despite our inner concerns
-
-        That’s where we’ll go, where we’ll go
-
-
-
-        [Repeat Chorus]
-        <span class="rsTmb">Smoke Ring Smile</span>
+            <p class="ui large">Although Radio Silence covers songs recorded over several years, most were either recorded or prior recordings were pretty much redone in 2020. While in isolation, I got fed up with social media and decided to remove all apps from my devices and spend weekends more productively and artistically. one song led to another and I ended up recording 14 over a a few months, 12 of which were selected for the album.       </p>
+        </div>
     </div>
-    <div>
-        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/home.jpg" data-rsw="707" data-rsh="397">
-        <h3>Slide with Image and Text</h3>
-        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago. But then, this is dummy copy. It is not meant to be read. Period.</p>
-        <span class="rsTmb">Image</span>
-    </div>
-    <div>
-        <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/boat.jpg" data-rsvideo="http://www.youtube.com/watch?v=HFbHRWwyihE" data-rsw="640" data-rsh="425">
-        <h3>Slide with Video and Text</h3>
-        <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. But then, this is dummy copy. It is not meant to be read. Period.</p>
-        <span class="rsTmb">Video</span>
+    <div class="eight wide column">
+        <div style="margin: 30px 15% 0 15%">
+            <div class="ui fluid image">
+                <img src="./images/studiopic.jpg">
+            </div>
+        </div>
     </div>
 
 </div>
 
+<!-- Back Cover Section-->
+
+<div class="ui divider"> </div>
+
+<div style="margin: 0 10% 0 10%">
+
+    <h2 class="ui icon header aligned center">
+        <i class="play icon"></i>
+        <div class="content">
+            The Songs
+            <div class="sub header">Twelve songs, journeying through time</div>
+        </div>
+    </h2>
+
+    <img src="./images/back-cover.png" style="width:100%; ">
+</div>
+
+
+<!-- Song Lyrics Section -->
+
+<div class="ui divider"> </div>
+
+
+<div class="gallery items-12" style='text-align: center; height: 800px'>
+    <div id="SmokeRingSmile" class="control-operator"></div>
+    <div id="VideoGames" class="control-operator"></div>
+    <div id="BadyDay" class="control-operator"></div>
+    <div id="SuspiciousMinds" class="control-operator"></div>
+    <div id="Anorak" class="control-operator"></div>
+
+    <figure class="item">
+        <h1>Smoke Ring Smile</h1>
+        <h2>Song and performed by Ian Taylor</h2>
+
+        <div w3-include-html="lyrics/SmokeRingSmile.html"></div>
+
+    </figure>
+
+    <figure class="item">
+        <h1>Kings Of The Video Games</h1>
+    </figure>
+
+    <figure class="item">
+        <h1>Bad Day</h1>
+    </figure>
+
+    <figure class="item">
+        <h1>Suspicious Minds</h1>
+        <h2>Song by Elvis, performed by Ian Taylor</h2>
+
+        <div w3-include-html="lyrics/SuspiciousMinds.html"></div>
+
+    </figure>
+
+    <figure class="item">
+        <h1>Anorak</h1>
+    </figure>
+
+    <div class="controls">
+        <a href="#SmokeRingSmile" class="control-button">•</a>
+        <a href="#VideoGames" class="control-button">•</a>
+        <a href="#BadyDay" class="control-button">•</a>
+        <a href="#SuspiciousMinds" class="control-button">•</a>
+        <a href="#Anorak" class="control-button">•</a>
+    </div>
+</div>
+
+<!-- Thanks ! Section -->
+
+<div class="ui divider"> </div>
+
+<div class="ui inverted grey segment" style="margin: 20px 25% 20px 25%; font-size: 20px" >
+    <h2 class="ui large header">Thanks !</h2>
+
+    <p class="ui large">
+        Thanks for the epic contributions from my son, George, with lyrics on Kings of the Video Games and for this site, twitter and all of that other social media stuff I don't do any more :)  Thanks to friends (Thamir, Tammy, Robert, Chris, Jarek and Sandra, to name a few) and sister Amanda for the positive feedback.  And thanks finally to my adorable wife, for the patience, positivity and asking to play this time and time again - you're a real sweetheart.
+    </p>
+</div>
+
+
+<!-- Footer -->
+<footer class="ui inverted secondary segment" style="text-align: center; font-size: 60px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+    <i class="fa fa-spotify w3-hover-opacity"></i>
+    <i class="fab fa-itunes w3-hover-opacity"></i>
+
+    <p style="font-size: 16px; padding: 10px;">Copyright Ian Taylor, 2020</p>
+</footer>
+
+
 <script>
-    jQuery(document).ready(function($) {
-        // Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
-        // it's recommended to disable them when using autoHeight module
-        $('#content-slider-1').royalSlider({
-            autoHeight: true,
-            arrowsNav: false,
-            fadeinLoadedSlide: false,
-            controlNavigationSpacing: 0,
-            controlNavigation: 'tabs',
-            imageScaleMode: 'none',
-            imageAlignCenter:false,
-            loop: false,
-            loopRewind: true,
-            numImagesToPreload: 6,
-            keyboardNavEnabled: true,
-            usePreloader: false
-        });
-    });
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
 </script>
 
+<script>
+    includeHTML();
+</script>
 
 </body>
 </html>
+
+
+
