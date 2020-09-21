@@ -60,7 +60,7 @@ figure {
     padding-top: 10px ;
     text-align: center;
     background-image: url("./images/paperbackground.png");
-    height: 825px;
+    height: 800px;
     overflow-y: scroll;
 }
 
@@ -79,7 +79,7 @@ figure {
 */
 .gallery {
     position: relative;
-    min-height: 975px;
+    min-height: 950px;
     background: #c75658;
 }
 .gallery .item {
