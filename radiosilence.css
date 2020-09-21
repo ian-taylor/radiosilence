@@ -47,7 +47,7 @@ figure {
 }
 
 .normal.sides {
-    margin: 20px 20% 0 20%;
+    margin: 10px 20% 0 20%;
 }
 
 .large.sides {
@@ -55,7 +55,8 @@ figure {
 }
 
 .pic.sides {
-    margin: 30px 10% 0 10%;
+    margin: 0 8% 0 8%;
+    padding:0;
 }
 
 .lyrics {
