@@ -13,9 +13,6 @@ figure {
     padding: 0;
 }
 
-.gallery {
-    margin: 0 20% 0 20%;
-}
 
 .social.bar {
     position: fixed;
@@ -63,8 +60,61 @@ figure {
     padding-top: 10px ;
     text-align: center;
     background-image: url("./images/paperbackground.png");
-    height: 1000px;
+    height: 825px;
+    overflow-y: scroll;
 }
+
+.gallery .control-button {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+    position: relative;
+    min-height: 975px;
+    background: #c75658;
+}
+.gallery .item {
+    text-align: center;
+}
+
+.gallery .item h1 {
+    background: #545156;
+    color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+
+.gallery .item h2 {
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.gallery .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.gallery .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s;
+}
+
 
 @media only screen and (max-width: 600px) {
     .banner {
