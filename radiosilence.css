@@ -42,9 +42,71 @@ figure {
 }
 
 
+.slim.sides {
+    margin: 20px 10% 0 10%;
+}
 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
+.normal.sides {
+    margin: 20px 20% 0 20%;
+}
+
+.large.sides {
+    margin: 20px 25% 0 25%;
+}
+
+.pic.sides {
+    margin: 30px 10% 0 10%;
+}
+
+.lyrics {
+    padding-top: 10px ;
+    text-align: center;
+    background-image: url("./images/paperbackground.png");
+    height: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        height: 22%;
+        position: fixed;
+    }
+
+    .bwrapper {
+        height: 22%;
+    }
+
+    .social.bar {
+        position: fixed;
+        white-space: nowrap;
+        width: 180px;
+        height: 34px;
+        right: 50%;
+        -webkit-transform: translate(-50%, 0);
+        padding: 5px;
+    }
+
+    .social.bar img {
+        width: 30%;
+        height: auto;
+    }
+
+    .lyrics.sides {
+        margin: 20px 10% 0 10%;
+    }
+
+    .slim.sides {
+        margin: 20px 5% 0 5%;
+    }
+
+    .normal.sides {
+        margin: 20px 5% 0 5%;
+    }
+
+    .large.sides {
+        margin: 20px 15% 0 15%;
+    }
+
+    .pic.sides {
+        margin: 30px 5% 0 5%;
+    }
 }
