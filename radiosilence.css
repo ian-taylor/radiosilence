@@ -28,6 +28,10 @@ figure {
     cursor: pointer;
 }
 
+.social.bar a img {
+    width: 60px;
+}
+
 
 .banner {
     height: 70%;
