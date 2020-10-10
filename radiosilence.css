@@ -36,10 +36,14 @@ figure {
 .banner {
     height: 70%;
     position: fixed;
+    width: 100%;
+    margin:0;
 }
 
 .bwrapper {
     height: 70%;
+    width: 100%;
+    margin:0;
 }
 
 
@@ -144,6 +148,11 @@ figure {
         width: 30%;
         height: auto;
     }
+
+    .social.bar a img {
+        width: 30px;
+    }
+
 
     .lyrics.sides {
         margin: 20px 10% 0 10%;
